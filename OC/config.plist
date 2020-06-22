@@ -15,37 +15,6 @@
 				<string>SSDT-EC-USBX-AMD.aml</string>
 			</dict>
 		</array>
-		<key>Block</key>
-		<array>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Drop CpuPm</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>Q3B1UG0AAAA=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Drop Cpu0Ist</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>Q3B1MElzdAA=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
-		</array>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -114,6 +83,9 @@
 			<key>ResetLogoStatus</key>
 			<false/>
 		</dict>
+		<key>Delete</key>
+		<array>
+		</array>
 	</dict>
 	<key>Booter</key>
 	<dict>
@@ -176,7 +148,7 @@
 	<dict>
 		<key>Add</key>
 		<dict/>
-		<key>Block</key>
+		<key>Delete</key>
 		<dict/>
 	</dict>
 	<key>Kernel</key>
@@ -1321,6 +1293,8 @@
 			<integer>67</integer>
 			<key>ApplePanic</key>
 			<true/>
+			<key>SysReport</key>
+			<false/>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1401,7 +1375,7 @@
 				<string>en-US:0</string>
 			</dict>
 		</dict>
-		<key>Block</key>
+		<key>Delete</key>
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<array>
@@ -1546,37 +1520,6 @@
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 		</dict>
-		<key>Protocols</key>
-		<dict>
-			<key>AppleAudio</key>
-			<false/>
-			<key>AppleBootPolicy</key>
-			<false/>
-			<key>AppleDebugLog</key>
-			<false/>
-			<key>AppleEvent</key>
-			<false/>
-			<key>AppleImageConversion</key>
-			<false/>
-			<key>AppleKeyMap</key>
-			<false/>
-			<key>AppleSmcIo</key>
-			<false/>
-			<key>AppleUserInterfaceTheme</key>
-			<false/>
-			<key>DataHub</key>
-			<false/>
-			<key>DeviceProperties</key>
-			<false/>
-			<key>FirmwareVolume</key>
-			<false/>
-			<key>HashServices</key>
-			<false/>
-			<key>OSInfo</key>
-			<false/>
-			<key>UnicodeCollation</key>
-			<false/>
-		</dict>
 		<key>Quirks</key>
 		<dict>
 			<key>ExitBootServicesDelay</key>
@@ -1637,9 +1580,12 @@
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
+			<key>AppleUserInterfaceTheme</key>
+			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<dict/>
+		<array>
+		</array>
 	</dict>
 </dict>
 </plist>
